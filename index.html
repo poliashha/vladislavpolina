@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Приглашение на свадьбу от Владислава и Полины">
+    <meta property="og:description" content="Приглашение на торжество">
+    <meta property="og:image" content="./images/icon.jpg" />
+    <meta property="og:image:width" content="350">
+    <meta property="og:image:height" content="350">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="color-scheme" content="light">
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/variabels.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" href="images/icon.ico" sizes="any" />
+    <link rel="icon" href="images/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  </head>
+  <body>
+    <header class="header">
+         <object 
+  type="image/svg+xml" 
+  data="./images/heart.svg" 
+  width="389" 
+  height="64">
+</object>
+      <span class="date-text">01/08/26</span>
+      <h1 class="bright-text dark-text">Владислав<br/>
+ &<br/>
+ Полина</h1>
+    </header>
+    <main class="main">
+      <article class="distinguished">
+        <div class="block">
+          <img class="small" src="./images/smallgood.png" alt="маленькие ">
+          <div class="name-block" id="greeting_block">
+          <h2 class="bright-text dark-text" id="greeting"></h2>
+          <h2 class="bright-text dark-text" id="greeting_wedding">у нас свадьба!</h2>
+        </div>
+          <p class="title grey-text">
+            Дорогие и любимые, мы приглашаем вас разделить с нами этот важный
+            момент
+          </p>
+        </div>
+           <object 
+  type="image/svg+xml" 
+  data="./images/angel.svg" 
+  width="340" 
+  height="133">
+</object>
+      </article>
+      <article class="calendar">
+        <div class="block">
+          
+          <h2 class="bright-text dark-text" id="greeting_wedding">дата торжества</h2>
+        </div>
+          <p class="title grey-text">
+            агуст | 2026
+          </p>
+        </div>
+           <object 
+  type="image/svg+xml" 
+  data="./images/heartfull.svg" 
+  width="322" 
+  height="299">
+</object>
+      </article>
+      <article class="card dark location">
+        <h2 class="bright-text nowrap">ЛОКАЦИЯ ТОРЖЕСТВА</h2>
+        <div>
+        <p class="title time">
+          В 15:00
+        </p>
+        <p class="title"> Отель «Ареал»,<br/>
+Московская область,<br/>
+Сиреневая ул., 21, микрорайон Родинки, д. Новая Купавна
+        </p></div>
+           <object 
+  type="image/svg+xml" 
+  data="./images/anchor.svg" 
+  width="126" 
+  height="178">
+</object>
+      </article>
+    
+      <article class="card light wishes">
+        <h2 class="bright-text">пожелания</h2>
+        <p class="title wishes-text text-width">
+          Пожалуйста, не обременяйте себя покупкой цветов. Мы мечтаем, чтобы этот день был легким для всех, а лучшим украшением праздника станут ваши счастливые глаза и яркие улыбки!
+        </p>
+        <p class="title wishes-text">
+          Cвои теплые слова приносите в сердцах, а подарки в конвертах
+        </p>
+           <object 
+  type="image/svg+xml" 
+  data="./images/bird.svg" 
+  width="288" 
+  height="128">
+</object>
+      </article>
+      <article class="card dark dress-kod">
+        <h2 class="bright-text">Дресс-код</h2>
+        <p class=" title">
+          Мы очень ждём и с удовольствием готовимся к нашему празднику. Будем благодарны, если вы поддержите нас, выбрав красивые наряды в палитре торжества.
+        </p>
+        <img src="./images/heartpolovina.svg" alt="" />
+      </article>
+      <article class="card light form">
+        <div>
+        <h2 class="bright-text">Анкета гостя</h2>
+        <p class="smallsize title">Пожалйста, заполните форму</p>
+        </div>
+        <form class="form-box" name="submit-to-google-sheet" id="form" action="#">
+          <label class="input_box">
+          <input
+            class="input"
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Имя Фамилия" required
+          />
+          <span class="error-text" id="error-text">Пожалуйста, заполните поле</span>
+        </label>
+          <fieldset class="radio" >
+            <h2 class="title wishes-text radio-text">
+              Сможете ли вы присутствовать?
+            </h2>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="да" id="presenceYes" required/>
+              <span class="radio-circle"></span>
+              <span>Да</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="нет" id="presenceNo" />
+              <span class="radio-circle"></span>
+              <span>Нет</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="ответит позже" id="presenceDN" />
+              <span class="radio-circle"></span>
+              <span>Отвечу позже, до <span class="timer-text timer-text_small">14.07.2026</span></span>
+            </label>
+            <div class="radio-error" id="presenceError">
+          
+          Пожалуйста, выберите, один из вариантов
+        </div>
+      </fieldset>
+          </fieldset>
+
+          <fieldset class="radio" id="presenceFieldset">
+            <h2 class="title wishes-text radio-text">
+              Есть ли у вас пищевая аллергия?
+            </h2>
+            <label class="custom-radio">
+              <input type="radio" name="allergy" value="нет" id="allergyNo" />
+              <span class="radio-circle"></span>
+              <span>Нет</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="allergy" value="да" id="allergyYes"/>
+              <span class="radio-circle"></span>
+              <span>Да</span>
+            </label>
+             <div class="allergy-error" id="allergyError">
+          
+          Пожалуйста, выберите, один из вариантов
+        </div>
+          </fieldset>
+
+          <div class="allergy-field" id="allergyDetails">
+            <label for="allergyInput" class="visually-hidden"
+              >Укажите, на что аллергия</label
+            >
+            <input
+              class="input"
+              type="text"
+              id="allergyInput"
+              placeholder="Укажите, на что аллергия"
+              name="listallergy"
+            />
+            
+          </div>
+<fieldset class="radio">
+  <h2 class="title wishes-text radio-text varints-text">
+             Что предпочитаете из напитков?
+            </h2>
+            <p class="varints">Можно выбрать несколько вариантов</p>
+          <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="белое вино"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Белое вино</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="красное вино"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Красное вино</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="шампанское"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Шампанское</span>
+          </label>
+          <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="коньяк"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Коньяк</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="виски"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Виски</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="водка"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Водка</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks another"
+            id="another-box"
+            type="checkbox"
+            class="checkbox__input"
+            value="другое"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Другое</span>
+          </label>
+           <div class="another-drink" id="another-drink">
+            <label for="drinkInput" class="visually-hidden"
+              >Укажите, какие напитки</label
+            >
+            <input
+              class="input"
+              type="text"
+              id="drinkInput"
+              placeholder="Укажите, какие напитки"
+              name="anotherlist"
+            />
+            
+          </div>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="безалкогольные напитки"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Безалкогольные напитки</span>
+          </label>
+          </fieldset>
+          <button class="button" type="submit">Подтвердить присутствие</button>
+          <div class="form-send"></div>
+        </form>
+      </article>
+    </main>
+    <footer class="footer">
+      <article class="card dark love-is">
+        <div class="countdown">
+  <h2 id="datetime" class="datetime bright-text">До встречи через:</h2>
+  <div class="timer" id="timer">
+    <span class="timer-box">
+      <p class="timer-text days" id="days"></p>
+    </span>
+    <span class="end-flex">
+       <p class="timer-text colon" >:</p>
+    </span>
+    <span >
+      <p class="timer-text hours" id="hours"></p>
+    </span>
+     <span class="end-flex">
+       <p class="timer-text colon" >:</p>
+    </span>
+    <span >
+      <p class="timer-text minutes" id="minutes"></p>
+    </span> 
+     <span class="end-flex">
+       <p class="timer-text colon">:</p>
+    </span>
+    <span >
+      <p class="timer-text seconds" id="seconds"></p>
+    </span>
+  </div>
+</div>
+        <object 
+        class="love-img"
+  type="image/svg+xml" 
+  data="./images/loveis.svg" 
+  width="200" 
+  height="247">
+</object>
+        <p class="footer-text">
+       С любовью,<br/>  Владислав и Полина!</p>
+      </article>
+    </footer>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
