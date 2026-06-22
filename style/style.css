@@ -243,7 +243,6 @@ body {
   background: transparent;
   transition: all 0.15s;
   position: relative;
-  border-radius: 0;
 }
 
 .custom-radio:hover .radio-circle {
