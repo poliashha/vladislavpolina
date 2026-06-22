@@ -192,6 +192,7 @@ body {
   width: 296px;
   outline: none;
   transition: border-color 0.2s ease;
+  border-radius: 0;
 }
 
 .text-width {
@@ -242,6 +243,7 @@ body {
   background: transparent;
   transition: all 0.15s;
   position: relative;
+  border-radius: 0;
 }
 
 .custom-radio:hover .radio-circle {
@@ -283,6 +285,7 @@ body {
   width: 14px;
   height: 14px;
   outline: none;
+  border-radius: 0;
 }
 
 .checkbox__input:checked::after {
